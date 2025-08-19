@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Typische Wahlpflichtfächer / Besonderheiten
+
+I – Mathematisch-naturwissenschaftlich-technisch Technik, Physik, Chemie verstärkte Mathematik, zusätzlich Technisches Zeichnen, mehr Physik/Chemie
+II – Wirtschaftlich BWL, Rechnungswesen Betriebswirtschaftslehre, Rechnungswesen, Wirtschaftsgeografie
+IIIa – Sprachlich Fremdsprachen Zweite Fremdsprache (z. B. Französisch) statt BwR/Technik
+IIIb – Musisch-gestaltend Kunst, Musik, Werken Kunsterziehung, Musik, Werken, textiles Gestalten
+
+Quellen:
+https://www.doabooks.org/
