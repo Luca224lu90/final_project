@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Max Mustermann",
+    "klasse": "8a",
+    "fächer": [
+      "mathe-natur-technik",
+      "bwl-rechnungswesen",
+      "fremdsprachen",
+      "kunst-musik-werken-textilesgestalten"
+    ],
+    "progress": {
+      "Mathematik": 0,
+      "Physik": 1,
+      "Chemie": 1,
+      "Technisches Zeichnen": 1
+    }
+  },
+  {
+    "id": 2,
+    "name": "Sandra Müller",
+    "klasse": "8b",
+    "fächer": [
+      "mathe-natur-technik",
+      "bwl-rechnungswesen",
+      "fremdsprachen",
+      "kunst-musik-werken-textilesgestalten"
+    ],
+    "progress": {
+      "Mathematik": 6,
+      "Physik": 5,
+      "Chemie": 5,
+      "Technisches Zeichnen": 6
+    }
+  }
+]

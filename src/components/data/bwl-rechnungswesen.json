@@ -1,0 +1,11 @@
+{
+  "id": "BWL2-RW2-WG2",
+  "name": "bwl-rechnungswesen-wirtschaftsgeografie",
+  "image": "/assets/images/public/assets/images/bwl-rechnungswesen.jpg",
+  "fächer": [
+    "BWL",
+    "Rechnungswesen Betriebswirtschaftslehre",
+    "Rechnungswesen",
+    "Wirtschaftsgeografie"
+  ]
+}

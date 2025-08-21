@@ -1,0 +1,11 @@
+{
+  "id": "S3A-F3A-L3A",
+  "name": "fremdsprachen",
+  "image": "public/assets/images/books-8594725_640.jpg",
+
+  "fächer": [
+    "Zweite Fremdsprache Französisch",
+    "Zweite Fremdsprache Spanisch",
+    "Zweite Fremdsprache Latein"
+  ]
+}

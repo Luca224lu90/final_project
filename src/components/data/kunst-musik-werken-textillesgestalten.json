@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "K3B",
+      "name": "Kunst",
+      "image": "public/assets/images/graffiti-771696_640.jpg"
+    },
+    {
+      "id": "M3B",
+      "name": "Musik",
+      "image": "public/assets/images/violin-924349_640.jpg"
+    },
+    {
+      "id": "W3B",
+      "name": "Werken",
+      "image": "/assets/images/kunst-musik-werken-textilesgestalen.png"
+    },
+    {
+      "id": "B3BK",
+      "name": "Textiles Gestalten",
+      "image": "/assets/images/kunst-musik-werken-textilesgestalen.png"
+    }
+  ],
+  "fächer": ["Kunst", "Musik", "Werken", "Kunsterziehung", "textiles Gestalten"]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "M1",
+  "name": "mathe-natur-technik",
+  "image": "public/assets/images/mathematics-7010433_640.jpg",
+
+  "fächer": ["Mathematik", "Physik", "Chemie", "Technisches Zeichnen"]
+}
