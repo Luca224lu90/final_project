@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///home/student/Dokumente/Dci/be/BE/final_project/app/page.js"],"sourcesContent":["export default function HomePage() {\n  return (\n    <section className=\"card stack\">\n      <h2>Willkommen zum Schulabenteuer 🎓</h2>\n      <p>\n        Forme deinen Charakter mit deinen Entscheidungen, entdecke deine\n        Fähigkeiten und erhalte am Ende der 10. Woche die für dich am besten\n        passende Unterrichtsempfehlung.\n      </p>\n      <div className=\"row\">\n        <a href=\"/character\">\n          <button>Charakter Erstellen</button>\n        </a>\n        <a href=\"/game\">\n          <button className=\"secondary\">Spiel Fortsetzen</button>\n        </a>\n        <a href=\"/status\">\n          <button className=\"ghost\">Status Anzeigen</button>\n        </a>\n      </div>\n    </section>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;;0BACjB,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;0BAKH,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAE,MAAK;kCACN,cAAA,8OAAC;sCAAO;;;;;;;;;;;kCAEV,8OAAC;wBAAE,MAAK;kCACN,cAAA,8OAAC;4BAAO,WAAU;sCAAY;;;;;;;;;;;kCAEhC,8OAAC;wBAAE,MAAK;kCACN,cAAA,8OAAC;4BAAO,WAAU;sCAAQ;;;;;;;;;;;;;;;;;;;;;;;AAKpC","debugId":null}}]
+}

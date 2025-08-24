@@ -1,0 +1,258 @@
+[
+  {
+    "id": "math_test",
+    "title": "Mathearbeit zurückbekommen",
+    "desc": "Beim Anblick des Ergebnisses hast du gemischte Gefühle. Wie reagierst du?",
+    "choices": [
+      {
+        "id": "review",
+        "label": "Fehler analysieren",
+        "effects": { "stats": { "math": 1 }, "motivation": -1, "week": 1 }
+      },
+      {
+        "id": "ignore",
+        "label": "Ignorieren und mit Freunden abhängen",
+        "effects": { "stats": { "social": 1 }, "stress": -1, "week": 1 }
+      }
+    ]
+  },
+  {
+    "id": "language_presentation",
+    "title": "Fremdsprachenpräsentation",
+    "desc": "Du bist dran, vor der Klasse zu präsentieren.",
+    "choices": [
+      {
+        "id": "present",
+        "label": "Auf die Bühne gehen",
+        "requires": { "anyOf": [ { "stat": "language", "gte": 5 }, { "roll": "1d6", "gte": 4 } ] },
+        "successText": "Du hast flüssig gesprochen und Applaus bekommen!",
+        "failText": "Du hast dich etwas verhaspelt, aber es versucht.",
+        "successEffects": { "stats": { "language": 1, "social": 1 }, "motivation": 1, "week": 1 },
+        "failEffects": { "stress": 1, "motivation": -1, "week": 1 }
+      },
+      {
+        "id": "skip",
+        "label": "Um Aufschub bitten",
+        "effects": { "stress": -1, "week": 1 }
+      }
+    ]
+  },
+  {
+    "id": "club_offer",
+    "title": "AG-Angebot",
+    "desc": "Musik oder Robotik?",
+    "choices": [
+      { "id": "music", "label": "Musik-AG", "effects": { "stats": { "creativity": 2 }, "week": 1 } },
+      { "id": "robotics", "label": "Robotik-AG", "effects": { "stats": { "science": 1, "math": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "bio_argument",
+    "title": "Streit mit dem Biologielehrer",
+    "desc": "Es gab eine Diskussion im Unterricht.",
+    "choices": [
+      { "id": "apologize", "label": "Entschuldigen", "effects": { "stats": { "social": 1 }, "stress": -1, "week": 1 } },
+      { "id": "double_down", "label": "Weiter verteidigen", "effects": { "stats": { "science": -1 }, "motivation": 1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "science_fair",
+    "title": "Wissenschaftsmesse",
+    "desc": "Die Projekteinreichung ist eröffnet.",
+    "choices": [
+      {
+        "id": "apply",
+        "label": "Teilnehmen (Naturwissenschaftstest)",
+        "requires": { "anyOf": [ { "stat": "science", "gte": 5 }, { "roll": "1d6", "gte": 5 } ] },
+        "successText": "Dein Projekt hat die Jury beeindruckt!",
+        "failText": "Das Experiment hat nicht funktioniert, aber du hast viel gelernt.",
+        "successEffects": { "stats": { "science": 2, "math": 1 }, "motivation": 2, "week": 1 },
+        "failEffects": { "stats": { "science": 1 }, "stress": 1, "week": 1 }
+      },
+      { "id": "pass", "label": "Dieses Jahr aussetzen", "effects": { "stress": -1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "art_day",
+    "title": "Kunsttag",
+    "desc": "Freies Arbeiten im Atelier.",
+    "choices": [
+      { "id": "paint", "label": "Ein Bild malen", "effects": { "stats": { "creativity": 2 }, "stress": -1, "week": 1 } },
+      { "id": "help", "label": "Einem Freund helfen", "effects": { "stats": { "social": 1, "creativity": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "group_project",
+    "title": "Krise im Gruppenprojekt",
+    "desc": "Es gibt Meinungsverschiedenheiten im Team.",
+    "choices": [
+      {
+        "id": "mediate",
+        "label": "Vermitteln",
+        "requires": { "anyOf": [ { "stat": "social", "gte": 5 }, { "roll": "1d6", "gte": 4 } ] },
+        "successText": "Du hast das Team wieder zusammengebracht.",
+        "failText": "Der Streit hat sich verschärft.",
+        "successEffects": { "stats": { "social": 2 }, "stress": -1, "week": 1 },
+        "failEffects": { "stress": 2, "week": 1 }
+      },
+      { "id": "ignore", "label": "Dich um deine Arbeit kümmern", "effects": { "stats": { "math": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "reading_challenge",
+    "title": "Lesewettbewerb",
+    "desc": "Veranstaltung in der Bibliothek.",
+    "choices": [
+      { "id": "join", "label": "Mitmachen", "effects": { "stats": { "language": 2 }, "week": 1 } },
+      { "id": "skip", "label": "Nicht teilnehmen", "effects": { "motivation": -1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "sports_day",
+    "title": "Sporttag",
+    "desc": "Aktivitäten auf dem Sportplatz.",
+    "choices": [
+      { "id": "compete", "label": "An Wettkämpfen teilnehmen", "effects": { "motivation": 2, "stress": -1, "week": 1 } },
+      { "id": "cheer", "label": "Vom Spielfeldrand anfeuern", "effects": { "stats": { "social": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "math_competition",
+    "title": "Mathematikwettbewerb",
+    "desc": "Schulübergreifendes Turnier.",
+    "choices": [
+      {
+        "id": "enter",
+        "label": "Am Wettbewerb teilnehmen",
+        "requires": { "anyOf": [ { "stat": "math", "gte": 6 }, { "roll": "2d6", "gte": 9 } ] },
+        "successText": "Du hast eine Medaille gewonnen!",
+        "failText": "Du hast Erfahrung gesammelt.",
+        "successEffects": { "stats": { "math": 2 }, "motivation": 2, "week": 1 },
+        "failEffects": { "stats": { "math": 1 }, "stress": 1, "week": 1 }
+      },
+      { "id": "prepare", "label": "Für nächstes Jahr üben", "effects": { "stats": { "math": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "robotics_lab",
+    "title": "Robotiklabor",
+    "desc": "Neue Sensoren sind angekommen.",
+    "choices": [
+      { "id": "build", "label": "Einen Miniroboter bauen", "effects": { "stats": { "science": 1, "math": 1, "creativity": 1 }, "week": 1 } },
+      { "id": "document", "label": "Den Prozess dokumentieren", "effects": { "stats": { "language": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "tutor_friend",
+    "title": "Einem Freund helfen",
+    "desc": "Dein Freund versteht die Hausaufgabe nicht.",
+    "choices": [
+      { "id": "math_help", "label": "Mathematik erklären", "effects": { "stats": { "math": 1, "social": 1 }, "week": 1 } },
+      { "id": "language_help", "label": "Sprachtraining geben", "effects": { "stats": { "language": 1, "social": 1 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "school_festival",
+    "title": "Schulfest",
+    "desc": "Gelegenheit, einen Stand aufzubauen.",
+    "choices": [
+      { "id": "volunteer", "label": "Freiwillig helfen", "effects": { "stats": { "social": 2 }, "motivation": 1, "week": 1 } },
+      { "id": "art_booth", "label": "Kunststand eröffnen", "effects": { "stats": { "creativity": 2 }, "week": 1 } }
+    ]
+  },
+  {
+    "id": "chemistry_lab",
+    "title": "Chemieexperiment",
+    "desc": "Achte auf die Sicherheitsregeln!",
+    "choices": [
+      {
+        "id": "perform",
+        "label": "Das Experiment durchführen",
+        "requires": { "anyOf": [ { "stat": "science", "gte": 5 }, { "roll": "1d6", "gte": 5 } ] },
+        "successText": "Ein einwandfreies Ergebnis!",
+        "failText": "Ein kleiner Verschüttungsvorfall, aber eine Lektion.",
+        "successEffects": { "stats": { "science": 2 }, "week": 1 },
+        "failEffects": { "stress": 1, "week": 1 }
+      },
+      { "id": "observe", "label": "Nur beobachten", "effects": { "motivation": 1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "debate_club",
+    "title": "Debattierclub",
+    "desc": "Thema: Technologie und Gesellschaft.",
+    "choices": [
+      {
+        "id": "speak",
+        "label": "Eigenes Argument vertreten",
+        "requires": { "anyOf": [ { "stat": "language", "gte": 6 }, { "roll": "1d6", "gte": 5 } ] },
+        "successText": "Du bist sehr überzeugend!",
+        "failText": "Etwas ordnen und erneut versuchen.",
+        "successEffects": { "stats": { "language": 2, "social": 1 }, "week": 1 },
+        "failEffects": { "stats": { "language": 1 }, "week": 1 }
+      },
+      { "id": "listen", "label": "Zuhören und mitschreiben", "effects": { "motivation": 1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "time_management",
+    "title": "Zeitmanagement",
+    "desc": "Balance zwischen Hausaufgaben, AGs und Erholung.",
+    "choices": [
+      { "id": "plan", "label": "Einen Plan erstellen", "effects": { "stress": -2, "week": 1 } },
+      { "id": "overcommit", "label": "Zu allem 'Ja' sagen", "effects": { "stress": 2, "motivation": 1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "coding_challenge",
+    "title": "Programmierungs-Challenge",
+    "desc": "Eine Algorithmusfrage wurde veröffentlicht.",
+    "choices": [
+      {
+        "id": "solve",
+        "label": "Versuchen zu lösen",
+        "requires": { "anyOf": [ { "stat": "math", "gte": 5 }, { "roll": "2d6", "gte": 8 } ] },
+        "successText": "Eine großartige Lösung!",
+        "failText": "Fast geschafft, noch etwas Übung.",
+        "successEffects": { "stats": { "math": 1, "science": 1 }, "week": 1 },
+        "failEffects": { "motivation": -1, "week": 1 }
+      },
+      { "id": "skip", "label": "Später anschauen", "effects": { "week": 1 } }
+    ]
+  },
+  {
+    "id": "mentor_meeting",
+    "title": "Beratungsgespräch mit dem Schulberater",
+    "desc": "Es geht um deine Ziele und Stärken.",
+    "choices": [
+      { "id": "reflect", "label": "Das Feedback umsetzen", "effects": { "motivation": 2, "week": 1 } },
+      { "id": "ignore", "label": "Nach eigenem Kopf handeln", "effects": { "motivation": -1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "library_research",
+    "title": "Bibliotheksrecherche",
+    "desc": "Eine Literaturrecherche durchführen.",
+    "choices": [
+      { "id": "deep_dive", "label": "Gründlich lesen", "effects": { "stats": { "language": 1, "science": 1 }, "week": 1 } },
+      { "id": "skim", "label": "Schnell überfliegen", "effects": { "motivation": 1, "week": 1 } }
+    ]
+  },
+  {
+    "id": "peer_presentation",
+    "title": "Peer-Präsentation",
+    "desc": "Einem Klassenkameraden ein Projekt vorstellen.",
+    "choices": [
+      {
+        "id": "present",
+        "label": "Präsentation halten",
+        "requires": { "anyOf": [ { "stat": "language", "gte": 5 }, { "stat": "social", "gte": 5 }, { "roll": "1d6", "gte": 4 } ] },
+        "successText": "Klar und überzeugend präsentiert!",
+        "failText": "Es gab Verwirrung in den Folien.",
+        "successEffects": { "stats": { "language": 1, "social": 1, "creativity": 1 }, "week": 1 },
+        "failEffects": { "stress": 1, "week": 1 }
+      },
+      { "id": "assist", "label": "Technische Unterstützung leisten", "effects": { "stats": { "science": 1 }, "week": 1 } }
+    ]
+  }
+]
