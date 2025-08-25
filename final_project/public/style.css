@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+    Helvetica, sans-serif;
+  color: rgb(8, 91, 94);
+  background: url(assets/image2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: inherit; /* inherits the background image from the body */
+  filter: blur(8px);
+  z-index: -1; /* ensures the pseudo-element is behind the content */
+}
+
+h1 {
+  color: rgb(8, 91, 94);
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: 8rem;
+}
+
+section {
+  margin: auto;
+  width: 20%;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  padding: 3px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 4rem;
+  border: rgb(8, 91, 94);
+}
+
+input[type="email"],
+input[type="text"] {
+  display: block;
+  background-color: transparent;
+  margin-top: 1rem;
+  border: rgb(8, 91, 94);
+  border-bottom: 10px solid rgb(8, 91, 94);
+  color: #085b5e;
+  font-size: 4rem;
+}
+input {
+  color: #085b5e;
+}
+
+button {
+  border: rgb(8, 91, 94);
+  width: 100%;
+  height: 5rem;
+  /* margin: 0rem; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(8, 91, 94);
+  font-size: 3rem;
+  background-color: grey;
+}
+
+.formain {
+  color: rgb(8, 91, 94);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
