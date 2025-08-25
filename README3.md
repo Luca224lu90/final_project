@@ -58,3 +58,25 @@ Prioritetenliste der features: 0. Beispieluser erstellen
 5. fortschritte bei der beantwortung der fragen. (fortschrittsbogen zu allen schülern)
 6. datenbank, wie sieht der fortschritt aus, datensatz.
 7. Würfelanimationen
+
+Typische Wahlpflichtfächer / Besonderheiten:
+I – Mathematisch-naturwissenschaftlich-technisch Technik, Physik, Chemie verstärkte Mathematik, zusätzlich Technisches Zeichnen, mehr Physik/Chemie
+II – Wirtschaftlich BWL, Rechnungswesen Betriebswirtschaftslehre, Rechnungswesen, Wirtschaftsgeografie
+IIIa – Sprachlich Fremdsprachen Zweite Fremdsprache (z. B. Französisch) statt BwR/Technik
+IIIb – Musisch-gestaltend Kunst, Musik, Werken Kunsterziehung, textiles Gestalten
+
+Quellen:
+https://directory.doabooks.org/browse?type=collection
+
+Die Fächer:
+
+1. Mathematik=M1, Physik=P1, Chemie=C1, Technisches Zeichnen=D1;
+2. Betriebswirtschaftslehre=BWL2, Rechnungswesen=RW2, Wirtschfaftsgeografie=WG2;
+3. a. eine Fremdsprache wie Spanisch=S3A, Französisch=F3A, oder Latein=L3A
+4. b. Kunst=K3B, Musik=M3B, Werken=W3B, textiles Gestalten=G3B
+
+Insgesamt zu jedem Fach 6 Fragen; (insgesamt 84 Fragen und Rätsel):
+-M1abcdef, P1abcdef, C1abcdef, D1abcdef; (24 Fragen)
+-BWL2abcdef, RW2abcdef, WG2abcdef; (18 Fragen)
+-S3Aabcdef, F3Aabcdef, L3Aabcdef; (18 Fragen)
+-K3Babcdef, M3Babcdef, W3Babcdef, G3Babcdef; (24 Fragen)

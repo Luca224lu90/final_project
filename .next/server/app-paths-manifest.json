@@ -1,3 +1,5 @@
 {
+  "/final/page": "app/final/page.js",
+  "/game/page": "app/game/page.js",
   "/page": "app/page.js"
 }
