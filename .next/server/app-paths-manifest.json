@@ -1,5 +1,7 @@
 {
+  "/character/page": "app/character/page.js",
   "/final/page": "app/final/page.js",
   "/game/page": "app/game/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/status/page": "app/status/page.js"
 }
